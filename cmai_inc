@@ -1,0 +1,8 @@
+CMAI_DIR := /opt/cmai
+CMAI_LIB_DIR = $(CMAI_DIR)/lib/ubuntu
+CMAI_INCLUDE = $(CMAI_DIR)/include
+
+SUBLIB = cmai ipc pthread_base 
+
+ADD_SUBLIB_INC = $(foreach n,$(SUBLIB),-I$(CMAI_INCLUDE)/$(n))
+

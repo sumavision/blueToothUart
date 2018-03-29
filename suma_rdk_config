@@ -1,0 +1,6 @@
+SUMA_DEV_DIRS := suma_api suma_osa 
+SUMA_DEV_DIRS += media ipc 
+SUMA_DEV_DIRS += ring_buffer 
+
+
+-include $(DRV_RULES_DIR)/Rules.make.ubuntu64
